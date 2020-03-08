@@ -30,11 +30,12 @@ Konlpy의 Mecab 형태소 분석기를 사용했다.
 모델의 임베딩층을 학습시키지 않고 word2vec로 학습시킨 단어의 분산표현을 사용했다.
 
 ### 모델
-시퀀스 데이터를 다루기 때문에 RNN 계열인 LSTM을 사용하여 모델을 구축했다.
-optimizer : Adam
-loss function : categorical crossentropy
-metrics : accuracy, auc
-클래스의 불균형을 보정하기 위하여 class weight 도 설정해주었다.
-
+- 시퀀스 데이터를 다루기 때문에 RNN 계열인 LSTM을 사용하여 모델을 구축했다.
+- 임베딩층에 word2vec로 미리 학습한 단어벡터를 사용하여 학습 속도를 높였다.
+- 모델 과적합을 막기 위하여 dropout 층도 사용했다.
+- optimizer : Adam
+- loss function : categorical crossentropy
+- metrics : accuracy, auc(본 대회의 평가 지표)
+- 클래스의 불균형을 보정하기 위하여 class weight 도 설정해주었다.
 
 
