@@ -13,6 +13,7 @@ colab
 - collections
 - imblearn
 - gensim
+- tensorflow 2.x
 
 ### 전처리
 본 데이터는 개인 정보가 XXX로 치환되어 있다. 높은 빈도수로 등장하지만 예측에는 방해되기 때문에 특수문자와 함께 제거한다.                                                                                                                            
